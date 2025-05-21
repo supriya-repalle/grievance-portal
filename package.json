@@ -11,11 +11,11 @@
     "tailwindcss": "^3.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-scripts start",
+  "build": "node node_modules/react-scripts/scripts/build.js",
+  "postinstall": "cross-env chmod +x node_modules/.bin/react-scripts || echo Skipping chmod on Windows"
+}
+,
   "browserslist": {
     "production": [
       ">0.2%",
